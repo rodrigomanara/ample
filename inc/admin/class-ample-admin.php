@@ -297,7 +297,106 @@ class Ample_Admin {
 					</tr>
 				</thead>
 				<tbody>
-
+					<tr>
+						<td><h3><?php esc_html_e('Price', 'foodhunt'); ?></h3></td>
+						<td><?php esc_html_e('Free', 'foodhunt'); ?></td>
+						<td><?php esc_html_e('$69', 'foodhunt'); ?></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Use as One Page theme', 'foodhunt'); ?></h3></td>
+						<td><span class="dashicons dashicons-no"></span></td>
+						<td><span class="dashicons dashicons-yes"></span></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Slider', 'foodhunt'); ?></h3></td>
+						<td><?php esc_html_e('4 Slides', 'foodhunt'); ?></td>
+						<td><?php esc_html_e('Unlimited Slides', 'foodhunt'); ?></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Slider Settings', 'foodhunt'); ?></h3></td>
+						<td><span class="dashicons dashicons-no"></span></td>
+						<td><?php esc_html_e('Slides type, duration & delay time', 'foodhunt'); ?></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Google Fonts', 'foodhunt'); ?></h3></td>
+						<td><span class="dashicons dashicons-no"></span></td>
+						<td><?php esc_html_e('600+', 'foodhunt'); ?></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Color Palette', 'foodhunt'); ?></h3></td>
+						<td><?php esc_html_e('Primary Color Option', 'foodhunt'); ?></span></td>
+						<td><?php esc_html_e('Primary color option & 35+', 'foodhunt'); ?></span></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Font Size options', 'foodhunt'); ?></h3></td>
+						<td><span class="dashicons dashicons-no"></span></td>
+						<td><span class="dashicons dashicons-yes"></span></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Business Template', 'foodhunt'); ?></h3></td>
+						<td><?php esc_html_e('1', 'foodhunt'); ?></span></td>
+						<td><?php esc_html_e('5', 'foodhunt'); ?></span></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Social Links', 'foodhunt'); ?></h3></td>
+						<td><span class="dashicons dashicons-no"></span></td>
+						<td><span class="dashicons dashicons-yes"></span></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Additional Top Header', 'spacious'); ?></h3></td>
+						<td><span class="dashicons dashicons-no"></td>
+						<td><?php esc_html_e('Social Links + Header text option', 'spacious'); ?></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Translation Ready', 'foodhunt'); ?></h3></td>
+						<td><span class="dashicons dashicons-yes"></span></td>
+						<td><span class="dashicons dashicons-yes"></span></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Woocommerce Compatible', 'foodhunt'); ?></h3></td>
+						<td><span class="dashicons dashicons-yes"></span></td>
+						<td><span class="dashicons dashicons-yes"></span></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Woocommerce archive page Layout', 'foodhunt'); ?></h3></td>
+						<td><span class="dashicons dashicons-no"></span></td>
+						<td><span class="dashicons dashicons-yes"></span></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('WPML/Polylang Compatible', 'foodhunt'); ?></h3></td>
+						<td><span class="dashicons dashicons-no"></span></td>
+						<td><span class="dashicons dashicons-yes"></span></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Custom Widgets', 'foodhunt'); ?></h3></td>
+						<td><?php esc_html_e('4', 'foodhunt'); ?></span></td>
+						<td><?php esc_html_e('6', 'foodhunt'); ?></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('TG: Testimonial', 'foodhunt'); ?></h3></td>
+						<td><span class="dashicons dashicons-no"></span></td>
+						<td><span class="dashicons dashicons-yes"></span></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('TG: Our Clients', 'foodhunt'); ?></h3></td>
+						<td><span class="dashicons dashicons-no"></span></td>
+						<td><span class="dashicons dashicons-yes"></span></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Footer Copyright Editor', 'foodhunt'); ?></h3></td>
+						<td><span class="dashicons dashicons-no"></span></td>
+						<td><span class="dashicons dashicons-yes"></span></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Demo Content', 'foodhunt'); ?></h3></td>
+						<td><span class="dashicons dashicons-no"></span></td>
+						<td><span class="dashicons dashicons-yes"></span></td>
+					</tr>
+					<tr>
+						<td><h3><?php esc_html_e('Support', 'foodhunt'); ?></h3></td>
+						<td><?php esc_html_e('Forum', 'foodhunt'); ?></span></td>
+						<td><?php esc_html_e('Emails/Priority Support Ticket', 'foodhunt'); ?></span></td>
+					</tr>
 				</tbody>
 			</table>
 
