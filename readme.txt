@@ -51,7 +51,7 @@ and we will include it within the theme from next version update.
 
 /**********************************************************/
 
-== CHANGE LOG ==
+== Changelog ==
 = Version 1.1.3 =
 * Fix - WooCommerce shop error fixed.
 * Tweaks - Updated Font Awesome to version 4.6.1.
