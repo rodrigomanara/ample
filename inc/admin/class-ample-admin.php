@@ -342,8 +342,8 @@ class Ample_Admin {
 					</tr>
 					<tr>
 						<td><h3><?php esc_html_e('Color Palette', 'foodhunt'); ?></h3></td>
-						<td><?php esc_html_e('Primary Color Option', 'foodhunt'); ?></span></td>
-						<td><?php esc_html_e('Primary color option & 35+', 'foodhunt'); ?></span></td>
+						<td><?php esc_html_e('Primary Color Option', 'foodhunt'); ?></td>
+						<td><?php esc_html_e('Primary color option & 35+', 'foodhunt'); ?></td>
 					</tr>
 					<tr>
 						<td><h3><?php esc_html_e('Font Size options', 'foodhunt'); ?></h3></td>
@@ -352,8 +352,8 @@ class Ample_Admin {
 					</tr>
 					<tr>
 						<td><h3><?php esc_html_e('Business Template', 'foodhunt'); ?></h3></td>
-						<td><?php esc_html_e('1', 'foodhunt'); ?></span></td>
-						<td><?php esc_html_e('5', 'foodhunt'); ?></span></td>
+						<td><?php esc_html_e('1', 'foodhunt'); ?></td>
+						<td><?php esc_html_e('5', 'foodhunt'); ?></td>
 					</tr>
 					<tr>
 						<td><h3><?php esc_html_e('Social Links', 'foodhunt'); ?></h3></td>
@@ -362,7 +362,7 @@ class Ample_Admin {
 					</tr>
 					<tr>
 						<td><h3><?php esc_html_e('Additional Top Header', 'spacious'); ?></h3></td>
-						<td><span class="dashicons dashicons-no"></td>
+						<td><span class="dashicons dashicons-no"></span></td>
 						<td><?php esc_html_e('Social Links + Header text option', 'spacious'); ?></td>
 					</tr>
 					<tr>
@@ -387,7 +387,7 @@ class Ample_Admin {
 					</tr>
 					<tr>
 						<td><h3><?php esc_html_e('Custom Widgets', 'foodhunt'); ?></h3></td>
-						<td><?php esc_html_e('4', 'foodhunt'); ?></span></td>
+						<td><?php esc_html_e('4', 'foodhunt'); ?></td>
 						<td><?php esc_html_e('6', 'foodhunt'); ?></td>
 					</tr>
 					<tr>
@@ -412,8 +412,8 @@ class Ample_Admin {
 					</tr>
 					<tr>
 						<td><h3><?php esc_html_e('Support', 'foodhunt'); ?></h3></td>
-						<td><?php esc_html_e('Forum', 'foodhunt'); ?></span></td>
-						<td><?php esc_html_e('Emails/Priority Support Ticket', 'foodhunt'); ?></span></td>
+						<td><?php esc_html_e('Forum', 'foodhunt'); ?></td>
+						<td><?php esc_html_e('Emails/Priority Support Ticket', 'foodhunt'); ?></td>
 					</tr>
 				</tbody>
 			</table>
