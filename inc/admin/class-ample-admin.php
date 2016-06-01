@@ -253,7 +253,7 @@ class Ample_Admin {
 
 			<?php $this->intro(); ?>
 
-			<p class="about-description"><?php esc_html_e( 'View changelog below.', 'ample' ); ?></p>
+			<p class="about-description"><?php esc_html_e( 'View changelog below:', 'ample' ); ?></p>
 
 			<?php
 				$changelog_file = apply_filters( 'ample_changelog_file', get_template_directory() . '/readme.txt' );
@@ -305,7 +305,7 @@ class Ample_Admin {
 
 			<?php $this->intro(); ?>
 
-			<p class="about-description"><?php esc_html_e( 'This theme recommends following plugins.', 'ample' ); ?></p>
+			<p class="about-description"><?php esc_html_e( 'This theme recommends following plugins:', 'ample' ); ?></p>
 			<ol>
 				<li><?php printf(__('<a href="%s" target="_blank">Social Icons</a>', 'ample'), esc_url('https://wordpress.org/plugins/social-icons/')); ?>
 					<?php esc_html_e(' by ThemeGrill', 'ample'); ?>
