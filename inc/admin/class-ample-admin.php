@@ -451,6 +451,12 @@ class Ample_Admin {
 						<td><?php esc_html_e('Forum', 'foodhunt'); ?></td>
 						<td><?php esc_html_e('Emails/Priority Support Ticket', 'foodhunt'); ?></td>
 					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td class="btn-wrapper">
+							<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'http://themegrill.com/themes/ample-pro/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php _e( 'View Pro', 'ample' ); ?></a>
+						</td>
 				</tbody>
 			</table>
 
