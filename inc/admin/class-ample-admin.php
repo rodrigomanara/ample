@@ -23,6 +23,7 @@ class Ample_Admin {
 	 */
 	public function __construct() {
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
+		add_action( 'wp_loaded', array( __CLASS__, 'hide_notices' ) );
 		add_action( 'load-themes.php', array( $this, 'admin_notice' ) );
 	}
 
@@ -51,8 +52,34 @@ class Ample_Admin {
 	public function admin_notice() {
 		global $ample_version, $pagenow;
 
-		if ( version_compare( $ample_version, '1.4.0', '=' ) || ( 'themes.php' == $pagenow && isset( $_GET['activated'] ) ) ) {
+		wp_enqueue_style( 'ample-message', get_template_directory_uri() . '/css/admin/message.css', array(), $ample_version );
+
+		// Let's bail on theme activation.
+		if ( 'themes.php' == $pagenow && isset( $_GET['activated'] ) ) {
 			add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
+			update_option( 'ample_admin_notice_welcome', 1 );
+
+		// No option? Let run the notice wizard again..
+		} elseif( ! get_option( 'ample_admin_notice_welcome' ) ) {
+			add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
+		}
+	}
+
+	/**
+	 * Hide a notice if the GET variable is set.
+	 */
+	public static function hide_notices() {
+		if ( isset( $_GET['ample-hide-notice'] ) && isset( $_GET['_ample_notice_nonce'] ) ) {
+			if ( ! wp_verify_nonce( $_GET['_ample_notice_nonce'], 'ample_hide_notices_nonce' ) ) {
+				wp_die( __( 'Action failed. Please refresh the page and retry.', 'ample' ) );
+			}
+
+			if ( ! current_user_can( 'manage_options' ) ) {
+				wp_die( __( 'Cheatin&#8217; huh?', 'ample' ) );
+			}
+
+			$hide_notice = sanitize_text_field( $_GET['ample-hide-notice'] );
+			update_option( 'ample_admin_notice_' . $hide_notice, 1 );
 		}
 	}
 
@@ -62,10 +89,10 @@ class Ample_Admin {
 	public function welcome_notice() {
 		?>
 		<div id="message" class="updated ample-message">
-			<p><?php printf( esc_html__( 'Welcome! Thank you for choosing Ample! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'ample' ), '<a href="' . esc_url( admin_url( 'themes.php?page=ample-welcome' ) ) . '">', '</a>' ); ?></p>
+			<a class="ample-message-close notice-dismiss" href="<?php echo esc_url( wp_nonce_url( remove_query_arg( array( 'activated' ), add_query_arg( 'ample-hide-notice', 'welcome' ) ), 'ample_hide_notices_nonce', '_ample_notice_nonce' ) ); ?>"><?php _e( 'Dismiss', 'ample' ); ?></a>
+			<p><?php printf( esc_html__( 'Welcome! Thank you for choosing Spacious! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'ample' ), '<a href="' . esc_url( admin_url( 'themes.php?page=ample-welcome' ) ) . '">', '</a>' ); ?></p>
 			<p class="submit">
-				<a class="button-primary" href="<?php echo esc_url( admin_url( 'themes.php?page=ample-welcome' ) ); ?>"><?php esc_html_e( 'Get started with Ample', 'ample' ); ?></a>
-				<a class="button-secondary skip" href="<?php echo esc_url( wp_nonce_url( add_query_arg( 'ample-hide-notice', 'welcome' ), 'ample_hide_notices_nonce', '_ample_notice_nonce' ) ); ?>"><?php _e( 'Hide This Notice', 'ample' ); ?></a>
+				<a class="button-secondary" href="<?php echo esc_url( admin_url( 'themes.php?page=ample-welcome' ) ); ?>"><?php esc_html_e( 'Get started with Spacious', 'ample' ); ?></a>
 			</p>
 		</div>
 		<?php
@@ -87,7 +114,7 @@ class Ample_Admin {
 				<h1>
 					<?php esc_html_e('About', 'ample'); ?>
 					<?php echo $theme->display( 'Name' ); ?>
-					<?php printf( esc_html__( '%s', 'ample' ), $major_version ); ?>
+					<?php printf( '%s', $major_version ); ?>
 				</h1>
 
 			<div class="welcome-description-wrap">
