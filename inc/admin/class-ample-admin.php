@@ -307,6 +307,12 @@ class Ample_Admin {
 
 			<p class="about-description"><?php esc_html_e( 'This theme recommends following plugins.', 'ample' ); ?></p>
 			<ol>
+				<li><?php printf(__('<a href="%s" target="_blank">Social Icons</a>', 'ample'), esc_url('https://wordpress.org/plugins/social-icons/')); ?>
+					<?php esc_html_e(' by ThemeGrill', 'ample'); ?>
+				</li>
+				<li><?php printf(__('<a href="%s" target="_blank">Easy Social Sharing</a>', 'ample'), esc_url('https://wordpress.org/plugins/easy-social-sharing/')); ?>
+					<?php esc_html_e(' by ThemeGrill', 'ample'); ?>
+				</li>
 				<li><?php printf(__('<a href="%s" target="_blank">Contact Form 7</a>', 'ample'), esc_url('https://wordpress.org/plugins/contact-form-7/')); ?></li>
 				<li><?php printf(__('<a href="%s" target="_blank">WP-PageNavi</a>', 'ample'), esc_url('https://wordpress.org/plugins/wp-pagenavi/')); ?></li>
 				<li><?php printf(__('<a href="%s" target="_blank">Breadcrumb NavXT</a>', 'ample'), esc_url('https://wordpress.org/plugins/breadcrumb-navxt/')); ?></li>
