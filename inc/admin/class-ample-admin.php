@@ -49,9 +49,9 @@ class Ample_Admin {
 	 * Add admin notice.
 	 */
 	public function admin_notice() {
-		global $pagenow;
+		global $ample_version, $pagenow;
 
-		if ( 'themes.php' == $pagenow && isset( $_GET['activated'] ) ) {
+		if ( version_compare( $ample_version, '1.4.0', '=' ) || ( 'themes.php' == $pagenow && isset( $_GET['activated'] ) ) ) {
 			add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
 		}
 	}
@@ -61,9 +61,12 @@ class Ample_Admin {
 	 */
 	public function welcome_notice() {
 		?>
-		<div class="updated notice is-dismissible">
-			<p><?php echo sprintf( esc_html__( 'Welcome! Thank you for choosing Ample! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'ample' ), '<a href="' . esc_url( admin_url( 'themes.php?page=ample-welcome' ) ) . '">', '</a>' ); ?></p>
-			<p><a href="<?php echo esc_url( admin_url( 'themes.php?page=ample-welcome' ) ); ?>" class="button" style="text-decoration: none;"><?php esc_html_e( 'Get started with Ample', 'ample' ); ?></a></p>
+		<div id="message" class="updated ample-message">
+			<p><?php printf( esc_html__( 'Welcome! Thank you for choosing Ample! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'ample' ), '<a href="' . esc_url( admin_url( 'themes.php?page=ample-welcome' ) ) . '">', '</a>' ); ?></p>
+			<p class="submit">
+				<a class="button-primary" href="<?php echo esc_url( admin_url( 'themes.php?page=ample-welcome' ) ); ?>"><?php esc_html_e( 'Get started with Ample', 'ample' ); ?></a>
+				<a class="button-secondary skip" href="<?php echo esc_url( wp_nonce_url( add_query_arg( 'ample-hide-notice', 'welcome' ), 'ample_hide_notices_nonce', '_ample_notice_nonce' ) ); ?>"><?php _e( 'Hide This Notice', 'ample' ); ?></a>
+			</p>
 		</div>
 		<?php
 	}
@@ -279,7 +282,7 @@ class Ample_Admin {
 			<ol>
 				<li><?php printf(__('<a href="%s" target="_blank">Contact Form 7</a>', 'ample'), esc_url('https://wordpress.org/plugins/contact-form-7/')); ?></li>
 				<li><?php printf(__('<a href="%s" target="_blank">WP-PageNavi</a>', 'ample'), esc_url('https://wordpress.org/plugins/wp-pagenavi/')); ?></li>
-				<li><?php printf(__('<a href="%s" target="_blank">Breadcrumb NavXT</a>', 'spacious'), esc_url('https://wordpress.org/plugins/breadcrumb-navxt/')); ?></li>
+				<li><?php printf(__('<a href="%s" target="_blank">Breadcrumb NavXT</a>', 'ample'), esc_url('https://wordpress.org/plugins/breadcrumb-navxt/')); ?></li>
 				<li><?php printf(__('<a href="%s" target="_blank">WooCommerce</a>', 'ample'), esc_url('https://wordpress.org/plugins/woocommerce/')); ?></li>
 				<li>
 					<?php printf(__('<a href="%s" target="_blank">Polylang</a>', 'ample'), esc_url('https://wordpress.org/plugins/polylang/')); ?>
@@ -361,9 +364,9 @@ class Ample_Admin {
 						<td><span class="dashicons dashicons-yes"></span></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Additional Top Header', 'spacious'); ?></h3></td>
+						<td><h3><?php esc_html_e('Additional Top Header', 'ample'); ?></h3></td>
 						<td><span class="dashicons dashicons-no"></span></td>
-						<td><?php esc_html_e('Social Links + Header text option', 'spacious'); ?></td>
+						<td><?php esc_html_e('Social Links + Header text option', 'ample'); ?></td>
 					</tr>
 					<tr>
 						<td><h3><?php esc_html_e('Translation Ready', 'foodhunt'); ?></h3></td>
