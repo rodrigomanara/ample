@@ -129,11 +129,11 @@ class Ample_Admin {
 		<p class="ample-actions">
 			<a href="<?php echo esc_url( 'http://themegrill.com/themes/ample/' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Theme Info', 'ample' ); ?></a>
 
-			<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'http://demo.themegrill.com/ample/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Demo', 'ample' ); ?></a>
+			<a href="<?php echo esc_url( 'http://demo.themegrill.com/ample/' ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Demo', 'ample' ); ?></a>
 
-			<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'http://themegrill.com/themes/ample-pro/' ) ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'ample' ); ?></a>
+			<a href="<?php echo esc_url( 'http://themegrill.com/themes/ample-pro/' ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'ample' ); ?></a>
 
-			<a href="<?php echo esc_url( apply_filters( 'ample_pro_theme_url', 'http://wordpress.org/support/view/theme-reviews/ample?filter=5' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'Rate this theme', 'ample' ); ?></a>
+			<a href="<?php echo esc_url( 'https://wordpress.org/support/view/theme-reviews/ample?filter=5#postform' ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'Rate this theme', 'ample' ); ?></a>
 		</p>
 
 		<h2 class="nav-tab-wrapper">
