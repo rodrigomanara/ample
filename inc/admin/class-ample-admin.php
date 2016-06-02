@@ -90,9 +90,9 @@ class Ample_Admin {
 		?>
 		<div id="message" class="updated ample-message">
 			<a class="ample-message-close notice-dismiss" href="<?php echo esc_url( wp_nonce_url( remove_query_arg( array( 'activated' ), add_query_arg( 'ample-hide-notice', 'welcome' ) ), 'ample_hide_notices_nonce', '_ample_notice_nonce' ) ); ?>"><?php _e( 'Dismiss', 'ample' ); ?></a>
-			<p><?php printf( esc_html__( 'Welcome! Thank you for choosing Spacious! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'ample' ), '<a href="' . esc_url( admin_url( 'themes.php?page=ample-welcome' ) ) . '">', '</a>' ); ?></p>
+			<p><?php printf( esc_html__( 'Welcome! Thank you for choosing Ample! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'ample' ), '<a href="' . esc_url( admin_url( 'themes.php?page=ample-welcome' ) ) . '">', '</a>' ); ?></p>
 			<p class="submit">
-				<a class="button-secondary" href="<?php echo esc_url( admin_url( 'themes.php?page=ample-welcome' ) ); ?>"><?php esc_html_e( 'Get started with Spacious', 'ample' ); ?></a>
+				<a class="button-secondary" href="<?php echo esc_url( admin_url( 'themes.php?page=ample-welcome' ) ); ?>"><?php esc_html_e( 'Get started with Ample', 'ample' ); ?></a>
 			</p>
 		</div>
 		<?php
@@ -181,31 +181,31 @@ class Ample_Admin {
 			<div class="changelog point-releases">
 				<div class="under-the-hood two-col">
 					<div class="col">
-						<h3><?php echo esc_html_e( 'Theme Customizer', 'ample' ); ?></h3>
+						<h3><?php esc_html_e( 'Theme Customizer', 'ample' ); ?></h3>
 						<p><?php esc_html_e( 'All Theme Options are available via Customize screen.', 'ample' ) ?></p>
 						<p><a href="<?php echo admin_url( 'customize.php' ); ?>" class="button button-secondary"><?php esc_html_e( 'Customize', 'ample' ); ?></a></p>
 					</div>
 
 					<div class="col">
-						<h3><?php echo esc_html_e( 'Documentation', 'ample' ); ?></h3>
+						<h3><?php esc_html_e( 'Documentation', 'ample' ); ?></h3>
 						<p><?php esc_html_e( 'Please view our documentation page to setup the theme.', 'ample' ) ?></p>
 						<p><a href="<?php echo esc_url( 'http://themegrill.com/theme-instruction/ample/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Documentation', 'ample' ); ?></a></p>
 					</div>
 
 					<div class="col">
-						<h3><?php echo esc_html_e( 'Got theme support question?', 'ample' ); ?></h3>
+						<h3><?php esc_html_e( 'Got theme support question?', 'ample' ); ?></h3>
 						<p><?php esc_html_e( 'Please put it in our dedicated support forum.', 'ample' ) ?></p>
 						<p><a href="<?php echo esc_url( 'http://themegrill.com/support-forum/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Support', 'ample' ); ?></a></p>
 					</div>
 
 					<div class="col">
-						<h3><?php echo esc_html_e( 'Need more features?', 'ample' ); ?></h3>
+						<h3><?php esc_html_e( 'Need more features?', 'ample' ); ?></h3>
 						<p><?php esc_html_e( 'Upgrade to PRO version for more exciting features.', 'ample' ) ?></p>
 						<p><a href="<?php echo esc_url( 'http://themegrill.com/themes/ample-pro/' ); ?>" class="button button-secondary"><?php esc_html_e( 'View PRO version', 'ample' ); ?></a></p>
 					</div>
 
 					<div class="col">
-						<h3><?php echo esc_html_e( 'Got sales related question?', 'ample' ); ?></h3>
+						<h3><?php esc_html_e( 'Got sales related question?', 'ample' ); ?></h3>
 						<p><?php esc_html_e( 'Please send it via our sales contact page.', 'ample' ) ?></p>
 						<p><a href="<?php echo esc_url( 'http://themegrill.com/contact/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Contact Page', 'ample' ); ?></a></p>
 					</div>
@@ -352,47 +352,47 @@ class Ample_Admin {
 				</thead>
 				<tbody>
 					<tr>
-						<td><h3><?php esc_html_e('Price', 'foodhunt'); ?></h3></td>
-						<td><?php esc_html_e('Free', 'foodhunt'); ?></td>
-						<td><?php esc_html_e('$69', 'foodhunt'); ?></td>
+						<td><h3><?php esc_html_e('Price', 'ample'); ?></h3></td>
+						<td><?php esc_html_e('Free', 'ample'); ?></td>
+						<td><?php esc_html_e('$69', 'ample'); ?></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Use as One Page theme', 'foodhunt'); ?></h3></td>
+						<td><h3><?php esc_html_e('Use as One Page theme', 'ample'); ?></h3></td>
 						<td><span class="dashicons dashicons-no"></span></td>
 						<td><span class="dashicons dashicons-yes"></span></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Slider', 'foodhunt'); ?></h3></td>
-						<td><?php esc_html_e('4 Slides', 'foodhunt'); ?></td>
-						<td><?php esc_html_e('Unlimited Slides', 'foodhunt'); ?></td>
+						<td><h3><?php esc_html_e('Slider', 'ample'); ?></h3></td>
+						<td><?php esc_html_e('4 Slides', 'ample'); ?></td>
+						<td><?php esc_html_e('Unlimited Slides', 'ample'); ?></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Slider Settings', 'foodhunt'); ?></h3></td>
+						<td><h3><?php esc_html_e('Slider Settings', 'ample'); ?></h3></td>
 						<td><span class="dashicons dashicons-no"></span></td>
-						<td><?php esc_html_e('Slides type, duration & delay time', 'foodhunt'); ?></td>
+						<td><?php esc_html_e('Slides type, duration & delay time', 'ample'); ?></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Google Fonts', 'foodhunt'); ?></h3></td>
+						<td><h3><?php esc_html_e('Google Fonts', 'ample'); ?></h3></td>
 						<td><span class="dashicons dashicons-no"></span></td>
-						<td><?php esc_html_e('600+', 'foodhunt'); ?></td>
+						<td><?php esc_html_e('600+', 'ample'); ?></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Color Palette', 'foodhunt'); ?></h3></td>
-						<td><?php esc_html_e('Primary Color Option', 'foodhunt'); ?></td>
-						<td><?php esc_html_e('Primary color option & 35+', 'foodhunt'); ?></td>
+						<td><h3><?php esc_html_e('Color Palette', 'ample'); ?></h3></td>
+						<td><?php esc_html_e('Primary Color Option', 'ample'); ?></td>
+						<td><?php esc_html_e('Primary color option & 35+', 'ample'); ?></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Font Size options', 'foodhunt'); ?></h3></td>
+						<td><h3><?php esc_html_e('Font Size options', 'ample'); ?></h3></td>
 						<td><span class="dashicons dashicons-no"></span></td>
 						<td><span class="dashicons dashicons-yes"></span></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Business Template', 'foodhunt'); ?></h3></td>
-						<td><?php esc_html_e('1', 'foodhunt'); ?></td>
-						<td><?php esc_html_e('5', 'foodhunt'); ?></td>
+						<td><h3><?php esc_html_e('Business Template', 'ample'); ?></h3></td>
+						<td><?php esc_html_e('1', 'ample'); ?></td>
+						<td><?php esc_html_e('5', 'ample'); ?></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Social Links', 'foodhunt'); ?></h3></td>
+						<td><h3><?php esc_html_e('Social Links', 'ample'); ?></h3></td>
 						<td><span class="dashicons dashicons-no"></span></td>
 						<td><span class="dashicons dashicons-yes"></span></td>
 					</tr>
@@ -402,54 +402,54 @@ class Ample_Admin {
 						<td><?php esc_html_e('Social Links + Header text option', 'ample'); ?></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Translation Ready', 'foodhunt'); ?></h3></td>
+						<td><h3><?php esc_html_e('Translation Ready', 'ample'); ?></h3></td>
 						<td><span class="dashicons dashicons-yes"></span></td>
 						<td><span class="dashicons dashicons-yes"></span></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Woocommerce Compatible', 'foodhunt'); ?></h3></td>
+						<td><h3><?php esc_html_e('Woocommerce Compatible', 'ample'); ?></h3></td>
 						<td><span class="dashicons dashicons-yes"></span></td>
 						<td><span class="dashicons dashicons-yes"></span></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Woocommerce archive page Layout', 'foodhunt'); ?></h3></td>
+						<td><h3><?php esc_html_e('Woocommerce archive page Layout', 'ample'); ?></h3></td>
 						<td><span class="dashicons dashicons-no"></span></td>
 						<td><span class="dashicons dashicons-yes"></span></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('WPML/Polylang Compatible', 'foodhunt'); ?></h3></td>
+						<td><h3><?php esc_html_e('WPML/Polylang Compatible', 'ample'); ?></h3></td>
 						<td><span class="dashicons dashicons-no"></span></td>
 						<td><span class="dashicons dashicons-yes"></span></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Custom Widgets', 'foodhunt'); ?></h3></td>
-						<td><?php esc_html_e('4', 'foodhunt'); ?></td>
-						<td><?php esc_html_e('6', 'foodhunt'); ?></td>
+						<td><h3><?php esc_html_e('Custom Widgets', 'ample'); ?></h3></td>
+						<td><?php esc_html_e('4', 'ample'); ?></td>
+						<td><?php esc_html_e('6', 'ample'); ?></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('TG: Testimonial', 'foodhunt'); ?></h3></td>
+						<td><h3><?php esc_html_e('TG: Testimonial', 'ample'); ?></h3></td>
 						<td><span class="dashicons dashicons-no"></span></td>
 						<td><span class="dashicons dashicons-yes"></span></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('TG: Our Clients', 'foodhunt'); ?></h3></td>
+						<td><h3><?php esc_html_e('TG: Our Clients', 'ample'); ?></h3></td>
 						<td><span class="dashicons dashicons-no"></span></td>
 						<td><span class="dashicons dashicons-yes"></span></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Footer Copyright Editor', 'foodhunt'); ?></h3></td>
+						<td><h3><?php esc_html_e('Footer Copyright Editor', 'ample'); ?></h3></td>
 						<td><span class="dashicons dashicons-no"></span></td>
 						<td><span class="dashicons dashicons-yes"></span></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Demo Content', 'foodhunt'); ?></h3></td>
+						<td><h3><?php esc_html_e('Demo Content', 'ample'); ?></h3></td>
 						<td><span class="dashicons dashicons-no"></span></td>
 						<td><span class="dashicons dashicons-yes"></span></td>
 					</tr>
 					<tr>
-						<td><h3><?php esc_html_e('Support', 'foodhunt'); ?></h3></td>
-						<td><?php esc_html_e('Forum', 'foodhunt'); ?></td>
-						<td><?php esc_html_e('Emails/Priority Support Ticket', 'foodhunt'); ?></td>
+						<td><h3><?php esc_html_e('Support', 'ample'); ?></h3></td>
+						<td><?php esc_html_e('Forum', 'ample'); ?></td>
+						<td><?php esc_html_e('Emails/Priority Support Ticket', 'ample'); ?></td>
 					</tr>
 					<tr>
 						<td></td>
