@@ -307,22 +307,20 @@ class Ample_Admin {
 
 			<p class="about-description"><?php esc_html_e( 'This theme recommends following plugins:', 'ample' ); ?></p>
 			<ol>
-				<li><?php printf(__('<a href="%s" target="_blank">Social Icons</a>', 'ample'), esc_url('https://wordpress.org/plugins/social-icons/')); ?>
+				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/social-icons/' ); ?>" target="_blank"><?php esc_html_e( 'Social Icons', 'ample' ); ?></a>
 					<?php esc_html_e(' by ThemeGrill', 'ample'); ?>
 				</li>
-				<li><?php printf(__('<a href="%s" target="_blank">Easy Social Sharing</a>', 'ample'), esc_url('https://wordpress.org/plugins/easy-social-sharing/')); ?>
+				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/easy-social-sharing/' ); ?>" target="_blank"><?php esc_html_e( 'Easy Social Sharing', 'ample' ); ?></a>
 					<?php esc_html_e(' by ThemeGrill', 'ample'); ?>
 				</li>
-				<li><?php printf(__('<a href="%s" target="_blank">Contact Form 7</a>', 'ample'), esc_url('https://wordpress.org/plugins/contact-form-7/')); ?></li>
-				<li><?php printf(__('<a href="%s" target="_blank">WP-PageNavi</a>', 'ample'), esc_url('https://wordpress.org/plugins/wp-pagenavi/')); ?></li>
-				<li><?php printf(__('<a href="%s" target="_blank">Breadcrumb NavXT</a>', 'ample'), esc_url('https://wordpress.org/plugins/breadcrumb-navxt/')); ?></li>
-				<li><?php printf(__('<a href="%s" target="_blank">WooCommerce</a>', 'ample'), esc_url('https://wordpress.org/plugins/woocommerce/')); ?></li>
-				<li>
-					<?php printf(__('<a href="%s" target="_blank">Polylang</a>', 'ample'), esc_url('https://wordpress.org/plugins/polylang/')); ?>
+				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/contact-form-7/' ); ?>" target="_blank"><?php esc_html_e( 'Contact Form 7', 'ample' ); ?></a></li>
+				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/wp-pagenavi/' ); ?>" target="_blank"><?php esc_html_e( 'WP-PageNavi', 'ample' ); ?></a></li>
+				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/breadcrumb-navxt/' ); ?>" target="_blank"><?php esc_html_e( 'Breadcrumb NavXT', 'ample' ); ?></a></li>
+				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/woocommerce/' ); ?>" target="_blank"><?php esc_html_e( 'WooCommerce', 'ample' ); ?></a></li>
+				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/polylang/' ); ?>" target="_blank"><?php esc_html_e( 'Polylang', 'ample' ); ?></a>
 					<?php esc_html_e('Fully Compatible in Pro Version', 'ample'); ?>
 				</li>
-				<li>
-					<?php printf(__('<a href="%s" target="_blank">WMPL</a>', 'ample'), esc_url('https://wpml.org/')); ?>
+				<li><a href="<?php echo esc_url( 'https://wpml.org/' ); ?>" target="_blank"><?php esc_html_e( 'WPML', 'ample' ); ?></a>
 					<?php esc_html_e('Fully Compatible in Pro Version', 'ample'); ?>
 				</li>
 			</ol>
